@@ -36,7 +36,7 @@ void init_vehicle(py::module_ &m) {
            py::arg("skills"), py::arg("time_window"), py::arg("breaks"),
            py::arg("description"), py::arg("costs"), py::arg("speed_factor"),
            py::arg("max_tasks"), py::arg("max_travel_time"),
-           py::arg("max_distance"), py::arg("steps"), py::arg("type_str") = "")
+           py::arg("max_distance"), py::arg("steps"), py::arg("type_str"))
       // .def("has_start", &vroom::Vehicle::has_start)
       // .def("has_end", &vroom::Vehicle::has_end)
       .def("_has_same_locations", &vroom::Vehicle::has_same_locations)
