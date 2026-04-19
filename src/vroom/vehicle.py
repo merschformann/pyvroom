@@ -187,8 +187,8 @@ class Vehicle(_vroom.Vehicle):
             args.append(f"time_window={self.time_window.start, self.time_window.end}")
         if self.costs:
             args.append(f"costs={self.costs}")
-        if self.type_str:
-            args.append(f"type_str={self.type_str}")
+        if self.type:
+            args.append(f"type={self.type}")
 
         for name, default in [
             ("breaks", []),
